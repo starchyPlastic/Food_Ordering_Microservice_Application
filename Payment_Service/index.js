@@ -13,6 +13,6 @@ app.post('/paymentprocess', (req, res) => {
 });
 
 
-app.listen(PORT, () => {
+app.listen(PORT, HOST, () => {
     console.log(`Payment Microservice is listening on port ${PORT}, ${HOST}`);
 });

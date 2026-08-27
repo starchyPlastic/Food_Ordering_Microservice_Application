@@ -18,6 +18,6 @@ app.get('/searchrestaurant', (req, res) => {
     res.send("searchrestaurant API called successfully.");
 });
 
-app.listen(PORT, () => {
+app.listen(PORT, HOST, () => {
     console.log(`Restaurant Microservice is listening on port ${PORT}, ${HOST}`);
 });

@@ -22,6 +22,6 @@ app.post('/sendnotification', (req, res) => {
 });
 
 
-app.listen(PORT, () => {
+app.listen(PORT, HOST, () => {
     console.log(`Notification Microservice is listening on port ${PORT}, ${HOST}`);
 });

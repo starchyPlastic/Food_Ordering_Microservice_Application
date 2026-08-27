@@ -55,6 +55,6 @@ app.delete('/cancelorder', (req, res) => {
     res.send("cancelorder API called successfully.");
 });
 
-app.listen(PORT, () => {
+app.listen(PORT, HOST, () => {
     console.log(`Order Microservice is listening on port ${PORT}, ${HOST}`);
 });
