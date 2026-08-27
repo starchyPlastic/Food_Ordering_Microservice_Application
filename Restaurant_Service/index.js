@@ -3,6 +3,7 @@ const app = express();
 
 // Set the port based on your requirements (e.g., 3001 for Restaurant service)
 const PORT = 3001;
+const HOST = '0.0.0.0'
 
 // API - viewallrestaurant
 
@@ -18,5 +19,5 @@ app.get('/searchrestaurant', (req, res) => {
 });
 
 app.listen(PORT, () => {
-    console.log(`Restaurant Microservice is listening on port ${PORT}`);
+    console.log(`Restaurant Microservice is listening on port ${PORT}, ${HOST}`);
 });

@@ -3,6 +3,7 @@ const app = express();
 
 // Set the port based on your requirements (e.g., 3003 for Payment service)
 const PORT = 3003;
+const HOST = '0.0.0.0'
 
 app.use(express.json());
 // API - paymentprocess
@@ -13,5 +14,5 @@ app.post('/paymentprocess', (req, res) => {
 
 
 app.listen(PORT, () => {
-    console.log(`Payment Microservice is listening on port ${PORT}`);
+    console.log(`Payment Microservice is listening on port ${PORT}, ${HOST}`);
 });

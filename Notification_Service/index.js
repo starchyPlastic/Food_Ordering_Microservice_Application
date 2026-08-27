@@ -3,6 +3,7 @@ const app = express();
 
 // Set the port based on your requirements (e.g., 3004 for Notification service)
 const PORT = 3004;
+const HOST = '0.0.0.0'
 app.use(express.json());
 // API - sendnotification
 
@@ -22,5 +23,5 @@ app.post('/sendnotification', (req, res) => {
 
 
 app.listen(PORT, () => {
-    console.log(`Notification Microservice is listening on port ${PORT}`);
+    console.log(`Notification Microservice is listening on port ${PORT}, ${HOST}`);
 });

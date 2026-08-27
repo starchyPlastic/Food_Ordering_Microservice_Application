@@ -4,7 +4,7 @@ const app = express();
 
 // Set the port based on your requirements (e.g., 3002 for Order service)
 const PORT = 3002;
-
+const HOST = '0.0.0.0'
 app.use(express.json());
 
 // API - addorder
@@ -56,5 +56,5 @@ app.delete('/cancelorder', (req, res) => {
 });
 
 app.listen(PORT, () => {
-    console.log(`Order Microservice is listening on port ${PORT}`);
+    console.log(`Order Microservice is listening on port ${PORT}, ${HOST}`);
 });
